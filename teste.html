@@ -1,0 +1,116 @@
+<html>
+<body style="margin: 0;";>
+<style>
+
+.bg {
+background-color: #40e038;
+background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 1000'%3E%3Cg %3E%3Ccircle fill='%2340e038' cx='50' cy='0' r='50'/%3E%3Cg fill='%2340d836' %3E%3Ccircle cx='0' cy='50' r='50'/%3E%3Ccircle cx='100' cy='50' r='50'/%3E%3C/g%3E%3Ccircle fill='%233fd034' cx='50' cy='100' r='50'/%3E%3Cg fill='%233fc932' %3E%3Ccircle cx='0' cy='150' r='50'/%3E%3Ccircle cx='100' cy='150' r='50'/%3E%3C/g%3E%3Ccircle fill='%233ec130' cx='50' cy='200' r='50'/%3E%3Cg fill='%233db92f' %3E%3Ccircle cx='0' cy='250' r='50'/%3E%3Ccircle cx='100' cy='250' r='50'/%3E%3C/g%3E%3Ccircle fill='%233cb22d' cx='50' cy='300' r='50'/%3E%3Cg fill='%233baa2b' %3E%3Ccircle cx='0' cy='350' r='50'/%3E%3Ccircle cx='100' cy='350' r='50'/%3E%3C/g%3E%3Ccircle fill='%233aa329' cx='50' cy='400' r='50'/%3E%3Cg fill='%23399b28' %3E%3Ccircle cx='0' cy='450' r='50'/%3E%3Ccircle cx='100' cy='450' r='50'/%3E%3C/g%3E%3Ccircle fill='%23389426' cx='50' cy='500' r='50'/%3E%3Cg fill='%23368d24' %3E%3Ccircle cx='0' cy='550' r='50'/%3E%3Ccircle cx='100' cy='550' r='50'/%3E%3C/g%3E%3Ccircle fill='%23348623' cx='50' cy='600' r='50'/%3E%3Cg fill='%23337f21' %3E%3Ccircle cx='0' cy='650' r='50'/%3E%3Ccircle cx='100' cy='650' r='50'/%3E%3C/g%3E%3Ccircle fill='%23317720' cx='50' cy='700' r='50'/%3E%3Cg fill='%232f711e' %3E%3Ccircle cx='0' cy='750' r='50'/%3E%3Ccircle cx='100' cy='750' r='50'/%3E%3C/g%3E%3Ccircle fill='%232d6a1d' cx='50' cy='800' r='50'/%3E%3Cg fill='%232b631b' %3E%3Ccircle cx='0' cy='850' r='50'/%3E%3Ccircle cx='100' cy='850' r='50'/%3E%3C/g%3E%3Ccircle fill='%23295c1a' cx='50' cy='900' r='50'/%3E%3Cg fill='%23275618' %3E%3Ccircle cx='0' cy='950' r='50'/%3E%3Ccircle cx='100' cy='950' r='50'/%3E%3C/g%3E%3Ccircle fill='%23254f17' cx='50' cy='1000' r='50'/%3E%3C/g%3E%3C/svg%3E");
+background-attachment: fixed;
+background-size: contain;
+text-shadow: 3px 2px 2px #000000;
+}
+
+@import url(https://fonts.googleapis.com/css?family=Roboto);
+
+section#nav-test {
+  height: 35vh;
+  right:20vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+section#nav-test #nav-container {
+  position: relative;
+  margin: 60px auto;
+  box-sizing: border-box;
+}
+section#nav-test #nav-container ul {
+  display: flex;
+  text-shadow: 1px 1px 1px black;
+  box-shadow: 0 4px 8px 4px rgba(0, 0, 0, 0.10), 0px 0px 11px 2px rgba(0, 0, 0, 0.12), 1px 1px 8px 3px rgba(0, 0, 0, 0.2);
+  padding-left: 30px;
+  padding-right: 30px;
+  border-radius:10px;
+  margin: 0;
+}
+section#nav-test #nav-container ul li {
+  display: flex;
+  align-items: center;
+  min-height: 48px;
+  margin-left: 60px;
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+section#nav-test #nav-container ul li:first-child {
+  margin-left: 0;
+}
+section#nav-test #nav-container ul li a {
+  color: #f1f1f1;
+}
+section#nav-test #nav-container #line {
+  position: absolute;
+  bottom: 0;
+  height: 2px;
+  background: red;
+  transition: all 150ms ease-in-out;
+}
+section#nav-test h1 {
+  margin-top: 30px;
+  font-weight: 500;
+  color: #212121;
+}
+
+section#nav-test #nav-container ul li:hover {
+	text-decoration: underline;
+	
+}
+
+#footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+	height:20px;
+	background-color:#151b18;
+	color:white;
+	  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size:10px;
+}
+</style>
+<section id="nav-test" style="position:absolute;">
+  <div id="nav-container">
+    <ul>
+      <li class="nav-li active-nav"><a>Home</a></li>
+      <li class="nav-li"><a>Projects</a></li>
+      <li class="nav-li"><a>Pricing</a></li>
+      <li class="nav-li"><a>Contact</a></li>
+    </ul>
+    <div id="line"></div>
+  </div>
+</section>
+
+<div style="width:100%; height:100%;" class="bg">
+
+	<div style="height:100%; width:50%; float:left; display: flex; align-items: center; justify-content: center;">
+	
+		<img src="tree.png"/>
+		
+	</div>
+	<!-- d i v i s o r y -->
+	<div style="height:100%; width:50%; float:left; display: flex; align-items: center; justify-content: left;">
+	
+		<div style="color:white; font-size:70px; margin-top:-40px;position:absolute;">Green<br>Refrigerators</div>
+		<div style="position:absolute; margin-top:70px; color:white; font-size:20px;">If it's not green, it won't rhyme with wolverine.</div>
+		
+	</div>
+	
+</div>
+<div id="footer">
+	🚹 Eduardo Schneider | © 2019 All Rights Reserved. | 🏠 Brazil - Campinas(SP) | 📞(19)99871-4889 | 📧 edu.schneiders@gmail.com
+</div>
+</body>
+</html>
